@@ -1,0 +1,244 @@
+*,
+*:before,
+*:after,
+*:hover {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(image/Fon.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.header-block {
+  /*border: 2px solid red;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+}
+
+.header-block::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1vh;
+  background-color: #1C1C1C;
+  position: absolute;
+  opacity: 7%;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity .1s linear;
+}
+
+/*.header-logo__img {*/
+/*  padding: 0;*/
+
+/*}*/
+
+.header-logo__img {
+  width: 2vw;
+  margin: 0;
+  padding: 0 0 0 0.5vw;
+}
+
+nav {
+  /*border: 2px solid gray;*/
+  width: 90%;
+  margin: 0;
+  padding-right: 2%;
+}
+
+.nav-items {
+  /*border: 2px solid green;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  /*border: 2px solid yellow;*/
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5vh;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #1C1C1C;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts div {
+  padding: 0;
+}
+
+.contacts-item__1 {
+  /*border: 2px solid yellow;*/
+  text-align: center;
+  width: 13vw;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 167%;
+  letter-spacing: 0.05em;
+}
+
+.contacts-item__1 div {
+  width: 100%;
+}
+
+.contacts-item__1_1 {
+  margin-bottom: 1vh;
+}
+
+.contacts-item__2 {
+  /*border: 2px solid yellow;*/
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 167%;
+  letter-spacing: 0.05em;
+}
+
+.contacts-item__2 span a {
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.contacts-item__2 img {
+  width: 2vw;
+}
+
+.contacts-item__2 span {
+  padding-left: 0.3vw;
+  border-bottom: 0.15vw dotted #12C868;
+}
+
+.contacts-item__3 {
+  /*border: 2px solid yellow;*/
+  width: 13vw;
+}
+
+.contacts-item__3 img {
+  width: 13vw;
+}
+
+.contacts-item__4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 167%;
+  letter-spacing: 0.05em;
+}
+
+.contacts-item__4_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 0.5vw;
+  height: 0.5vw;
+  background: #12C868;
+  border-radius: 100px;
+  margin-right: 0.5vw;
+}
+
+.messenger-block img {
+  width: 3vw;
+}
+
+.contacts-item__5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 167%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.phone-number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
+  line-height: 167%;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.call-me {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #12C868;
+  border-bottom: 0.15vw dotted #12C868;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-align: center;
+  width: 15vw;
+  padding: 1vw;
+}
