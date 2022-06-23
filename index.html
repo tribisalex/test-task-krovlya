@@ -13,13 +13,11 @@
 <header class="header">
     <div class="header-block">
         <img class="header-logo__img" src="assets/image/logo.png" alt="logo">
-        <!--        <div class="header-logo__img">-->
-        <!--            -->
-        <!--        </div>-->
+
         <nav>
             <ul class="nav-items">
                 <li class="nav-item"><a href="#">каталог</a></li>
-                <li class="nav-item"><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                <li class="nav-item"><a href="#">преимущества</a></li>
                 <li class="nav-item"><a href="#">ПРИМЕРЫ РАБОТ</a></li>
                 <li class="nav-item"><a href="#">МОНТАЖ</a></li>
                 <li class="nav-item"><a href="#">ОТЗЫВЫ</a></li>
@@ -62,7 +60,7 @@
             <div class="phone-number">
                 8(800) 222-54-60
             </div>
-            <div class="call-me">
+            <div class="call-me open-button" id="open-button">
                 Позвони мне
             </div>
         </div>
@@ -120,8 +118,38 @@
     </section>
 </main>
 <footer>
-
 </footer>
+<div class="modal-overlay closed" id="modal-overlay"></div>
 
+<div class="modal closed" id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription"
+     role="dialog">
+    <div class="close-button" id="close-button" title="Закрыть модальное окно">
+        <img src="assets/image/close.png" alt="close">
+    </div>
+    <div class="modal-guts" role="document">
+        <h3>Быстро оставить заявку</h3>
+        <div class="form-item__1">Введите номер, мы позвоним вам в течение 10 минут в рабочее время</div>
+        <div class="form-item__2">Пн-Пт 9:00 - 18:00, Сб 10:00 - 18:00</div>
+        <form>
+            <input type="text"
+                   pattern="+7 ([0-9]{3}([0-9]{3})([0-9]{2})([0-9]{2})"
+                   placeholder="+7(___)__-__-__"
+                   class="EnterPhone"
+                   required>
+            <button class="appointment">
+                <span>Позвонить мне</span>
+                <img src="assets/image/СтрелкаRight.png" alt="Стрелка">
+            </button>
+            <div class="check-form">
+                <input id="check" type="checkbox" required>
+                <div>
+                    <label for="check">Нажимая кнопку вы соглашаетесь с условиями</label>
+                    <div class="confid"><a href="assets/Прайс.pdf">Политика конфиденциальности</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="assets/js/modal.js"></script>
 </body>
 </html>
