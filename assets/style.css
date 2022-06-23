@@ -46,11 +46,6 @@ body {
   transition: opacity .1s linear;
 }
 
-/*.header-logo__img {*/
-/*  padding: 0;*/
-
-/*}*/
-
 .header-logo__img {
   width: 2vw;
   margin: 0;
@@ -74,6 +69,10 @@ nav {
   margin: 0;
 }
 
+.nav-item:hover {
+
+}
+
 .nav-item {
   /*border: 2px solid yellow;*/
   margin: 0;
@@ -81,7 +80,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 2.5vh;
+  font-size: 1vw;
   line-height: 140%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -96,6 +95,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*border: 2px solid hotpink;*/
 }
 
 .contacts div {
@@ -108,7 +108,7 @@ nav {
   width: 13vw;
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 0.8vw;
   line-height: 167%;
   letter-spacing: 0.05em;
 }
@@ -222,23 +222,173 @@ nav {
 }
 
 .content {
+  margin-top: 1.5vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  /*border: 2px solid green;*/
 }
 
 .advantages {
+  /*border: 2px solid red;*/
+  width: 14vw;
+  height: 26vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 1vw;
+  margin: 0;
+}
+
+.advantages-menu-shadow {
+  margin: 0;
+  width: 100%;
+  height: 2vw;
+  padding: 0;
 }
 
 .advantages-item {
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5vh;
+  font-size: 2.1vh;
   text-align: center;
-  width: 15vw;
-  padding: 1vw;
+  width: 80%;
+}
+
+.advantages-item:first-child {
+  padding-top: 1vw;
+}
+
+.advantages-item:last-child {
+  padding-bottom: 1vw;
+}
+
+.button-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+
+button {
+  border: none;
+  width: 20vw;
+  height: 5vw;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 157%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
+
+button div {
+  margin: 0;
+  padding: 0;
+}
+
+button img {
+  width: 1vw;
+  min-width: 1vw;
+  max-width: 1vw;
+}
+
+.cost {
+  background: #12C868;
+  box-shadow: inset 0 0 1.8vw rgba(255, 255, 255, 0.25);
+  border-radius: 500px;
+}
+
+.cost:hover {
+  background: #21E27C;
+  box-shadow: inset 0 0 1.8vw rgba(255, 255, 255, 0.25);
+}
+
+.appointment {
+  background: #F38120;
+  box-shadow: inset 0 0 1.8vw rgba(255, 255, 255, 0.25);
+  border-radius: 5vw;
+}
+
+.appointment:hover {
+  background: #FD9C49;
+  box-shadow: inset 0 0 1.8vw rgba(255, 255, 255, 0.25);
+}
+
+.appointment img {
+
+}
+
+.content-item {
+  /*border: 2px solid red;*/
+  width: 42vw;
+  margin-left: 3vw;
+}
+
+.content-item__1 {
+  /*border: 2px solid red;*/
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.3vw;
+  text-align: justify;
+  line-height: 180%;
+  color: #1C1C1C;
+  width: 27vw;
+  margin: 1vw;
+}
+
+.content-item__2 {
+  /*border: 2px solid khaki;*/
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7vw;
+  color: #1C1C1C;
+}
+
+.content-item__2 div {
+  padding-left: 1.5vw;
+}
+
+.content-item__2 img {
+  width: 3.5vw;
+}
+
+.questions {
+  margin-top: 1vw;
+  width: 14vw;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7vw;
+  text-align: center;
+}
+
+.questions div {
+  margin-left: 1vw;
+}
+
+.questions img {
+  /*border: 2px solid green;*/
+  min-width: 2vw;
+  width: 2vw;
+  max-width: 2vw;
+}
+
+.arm {
+  width: 10%;
+  margin: 0;
+  padding: 0;
 }
