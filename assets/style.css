@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   background-image: url(image/Fon.png);
@@ -15,6 +13,10 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
+}
+
+.close-advantages {
+  display: none;
 }
 
 .header {
@@ -52,9 +54,6 @@ body {
 .header-block2 {
   display: none;
 }
-
-
-
 
 .header-logo__img {
   width: 2vw;
@@ -119,7 +118,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*border: 2px solid hotpink;*/
 }
 
 .contacts div {
@@ -127,7 +125,6 @@ nav {
 }
 
 .contacts-item__1 {
-  /*border: 2px solid yellow;*/
   text-align: center;
   width: 13vw;
   font-style: normal;
@@ -146,7 +143,6 @@ nav {
 }
 
 .contacts-item__2 {
-  /*border: 2px solid yellow;*/
   width: 13vw;
   display: flex;
   flex-direction: row;
@@ -174,7 +170,7 @@ nav {
 }
 
 .contacts-item__3 {
-   width: 13vw;
+  width: 13vw;
 }
 
 .contacts-item__3 img {
@@ -258,11 +254,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /*border: 2px solid green;*/
 }
 
 .advantages {
-  /*border: 2px solid red;*/
   width: 14vw;
   display: flex;
   flex-direction: column;
@@ -355,13 +349,11 @@ button img {
 }
 
 .content-item {
-  /*border: 2px solid red;*/
   width: 42vw;
   margin-left: 3vw;
 }
 
 .content-item__1 {
-  /*border: 2px solid red;*/
   font-style: normal;
   font-weight: 300;
   font-size: 2.3vw;
@@ -373,7 +365,6 @@ button img {
 }
 
 .content-item__2 {
-  /*border: 2px solid khaki;*/
   display: flex;
   align-items: center;
   justify-content: start;
@@ -408,7 +399,6 @@ button img {
 }
 
 .questions img {
-  /*border: 2px solid green;*/
   min-width: 2vw;
   width: 2vw;
   max-width: 2vw;
@@ -432,9 +422,7 @@ button img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /*background: white;*/
   background: url(image/modal-fon.png);
-  /*box-shadow: 0 0 2vw 0.5vw rgba(0, 0, 0, 0.9);*/
   border-radius: 1.8vw;
 }
 
@@ -458,7 +446,6 @@ button img {
   left: 0;
   width: 100%;
   height: 100%;
-  /*overflow: auto;*/
   padding: 1vw;
   display: flex;
   flex-direction: column;
@@ -471,7 +458,6 @@ button img {
   top: 0.3vw;
   right: 0.3vw;
   border: 0;
-  /*background: black;*/
   color: white;
   padding: 1vw 1vw;
   font-size: 1.3rem;
@@ -506,7 +492,7 @@ form {
   color: #1C1C1C;
 }
 
-.confid a{
+.confid a {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -569,6 +555,7 @@ form .appointment {
   opacity: 0.75;
   margin: 1vw;
 }
+
 
 @media (max-width: 1400px) {
   .modal {
@@ -733,7 +720,7 @@ form .appointment {
     font-size: 12px;
   }
 
-  .confid a{
+  .confid a {
     font-size: 12px;
   }
 
@@ -895,7 +882,7 @@ form .appointment {
   }
 
   .contacts-item__5 {
-font-size: 10px;
+    font-size: 10px;
   }
 
 
@@ -1039,18 +1026,68 @@ font-size: 10px;
     font-size: 14px;
   }
 
-
   .questions {
     width: 100%;
   }
 
+  .close-advantages {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    background: #F38120;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
+  .close-advantages:hover {
+    animation: radial-pulse 1s infinite;
+  }
+
+  @keyframes radial-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(243, 129, 32, 1);
+    }
+
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .slide {
+    position: fixed;
+    bottom: -170px;
+    width: 200px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    text-align: center;
+    z-index: 1500;
+  }
+
+  .slide-show {
+    bottom: 40%;
+  }
+
+  .close-button-show {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
 }
 
 @media (max-width: 450px) {
-  .advantages {
-    width: 95%;
-    bottom: -70%;
-    border-radius: 15px;
-  }
+
 }
