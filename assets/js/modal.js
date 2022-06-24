@@ -12,17 +12,19 @@ const slide = document.querySelector(".slide");
 closeButton.addEventListener("click", function () {
   modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
+  slide.classList.toggle("slide-hide")
 });
 
 openButton.addEventListener("click", function () {
   modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
+  slide.classList.toggle("slide-hide")
 });
-
 
 openButton1.addEventListener("click", function () {
   modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
+  slide.classList.toggle("slide-hide")
 });
 
 buttonSubmit.addEventListener("click", function () {
@@ -31,6 +33,7 @@ buttonSubmit.addEventListener("click", function () {
     phone.value = ''
     modal.classList.toggle("closed");
     modalOverlay.classList.toggle("closed");
+    slide.classList.toggle("slide-hide");
     alert('Спасибо, Ваша заявка отправлена');
   }
 })

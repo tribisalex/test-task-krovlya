@@ -1072,11 +1072,19 @@ form .appointment {
     -o-transition-duration: 1s;
     transition-duration: 1s;
     text-align: center;
-    z-index: 1500;
+    z-index: 1050;
   }
+
+  .modal-overlay-show {
+    z-index: 1040;
+   }
 
   .slide-show {
     bottom: 40%;
+  }
+
+  .slide-hide {
+    z-index: 1;
   }
 
   .close-button-show {
@@ -1089,5 +1097,7 @@ form .appointment {
 }
 
 @media (max-width: 450px) {
-
+  .modal {
+    width: 300px;
+  }
 }
