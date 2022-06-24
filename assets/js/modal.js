@@ -2,6 +2,7 @@ const modal = document.querySelector("#modal");
 const modalOverlay = document.querySelector("#modal-overlay");
 const closeButton = document.querySelector("#close-button");
 const openButton = document.querySelector("#open-button");
+const openButton1 = document.querySelector("#open-button1");
 const phone = document.getElementById("phone");
 const check = document.getElementById("check");
 const buttonSubmit = document.getElementById("submit-button");
@@ -12,6 +13,12 @@ closeButton.addEventListener("click", function () {
 });
 
 openButton.addEventListener("click", function () {
+  modal.classList.toggle("closed");
+  modalOverlay.classList.toggle("closed");
+});
+
+
+openButton1.addEventListener("click", function () {
   modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
 });
